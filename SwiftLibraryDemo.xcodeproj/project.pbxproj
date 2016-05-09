@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277537D750D2A076C416231D /* Pods_SwiftLibraryDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8393B926F072C23A76025259 /* Pods_SwiftLibraryDemo.framework */; };
 		94B936F01CE027B50013E424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B936EF1CE027B50013E424 /* AppDelegate.swift */; };
 		94B936F21CE027B50013E424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B936F11CE027B50013E424 /* ViewController.swift */; };
 		94B936F51CE027B50013E424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B936F31CE027B50013E424 /* Main.storyboard */; };
 		94B936F71CE027B50013E424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B936F61CE027B50013E424 /* Assets.xcassets */; };
 		94B936FA1CE027B50013E424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B936F81CE027B50013E424 /* LaunchScreen.storyboard */; };
+		94B937021CE027DB0013E424 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B937011CE027DB0013E424 /* MainViewController.swift */; };
+		94B937041CE03C120013E424 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B937031CE03C120013E424 /* DetailViewController.swift */; };
+		94B937061CE05A190013E424 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B937051CE05A190013E424 /* Shape.swift */; };
+		94B937081CE05ABD0013E424 /* SubShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B937071CE05ABD0013E424 /* SubShape.swift */; };
+		94B9370A1CE06D590013E424 /* SnakesAndLadders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B937091CE06D590013E424 /* SnakesAndLadders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8393B926F072C23A76025259 /* Pods_SwiftLibraryDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLibraryDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B936EC1CE027B40013E424 /* SwiftLibraryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLibraryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B936EF1CE027B50013E424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94B936F11CE027B50013E424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,13 @@
 		94B936F61CE027B50013E424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94B936F91CE027B50013E424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94B936FB1CE027B50013E424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94B937011CE027DB0013E424 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		94B937031CE03C120013E424 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		94B937051CE05A190013E424 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		94B937071CE05ABD0013E424 /* SubShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubShape.swift; sourceTree = "<group>"; };
+		94B937091CE06D590013E424 /* SnakesAndLadders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakesAndLadders.swift; sourceTree = "<group>"; };
+		E14E38164319FAFC9BB701A6 /* Pods-SwiftLibraryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLibraryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLibraryDemo/Pods-SwiftLibraryDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BD2100B22F00FA4FE47F53 /* Pods-SwiftLibraryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLibraryDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLibraryDemo/Pods-SwiftLibraryDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277537D750D2A076C416231D /* Pods_SwiftLibraryDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FF032A5A666D15870A6A78D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E14E38164319FAFC9BB701A6 /* Pods-SwiftLibraryDemo.debug.xcconfig */,
+				E1BD2100B22F00FA4FE47F53 /* Pods-SwiftLibraryDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		845FA3504BC9B3102CDE5FF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8393B926F072C23A76025259 /* Pods_SwiftLibraryDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94B936E31CE027B40013E424 = {
 			isa = PBXGroup;
 			children = (
 				94B936EE1CE027B50013E424 /* SwiftLibraryDemo */,
 				94B936ED1CE027B40013E424 /* Products */,
+				3FF032A5A666D15870A6A78D /* Pods */,
+				845FA3504BC9B3102CDE5FF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +88,13 @@
 		94B936EE1CE027B50013E424 /* SwiftLibraryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				94B937051CE05A190013E424 /* Shape.swift */,
+				94B937071CE05ABD0013E424 /* SubShape.swift */,
+				94B937091CE06D590013E424 /* SnakesAndLadders.swift */,
 				94B936EF1CE027B50013E424 /* AppDelegate.swift */,
 				94B936F11CE027B50013E424 /* ViewController.swift */,
+				94B937011CE027DB0013E424 /* MainViewController.swift */,
+				94B937031CE03C120013E424 /* DetailViewController.swift */,
 				94B936F31CE027B50013E424 /* Main.storyboard */,
 				94B936F61CE027B50013E424 /* Assets.xcassets */,
 				94B936F81CE027B50013E424 /* LaunchScreen.storyboard */,
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94B936FE1CE027B50013E424 /* Build configuration list for PBXNativeTarget "SwiftLibraryDemo" */;
 			buildPhases = (
+				B9D8A24FB2D5456B1F09EF00 /* 📦 Check Pods Manifest.lock */,
 				94B936E81CE027B40013E424 /* Sources */,
 				94B936E91CE027B40013E424 /* Frameworks */,
 				94B936EA1CE027B40013E424 /* Resources */,
+				5DCCC9AF664F3726856EC45B /* 📦 Embed Pods Frameworks */,
+				CE0FE949833FE6B742F54695 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +172,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DCCC9AF664F3726856EC45B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLibraryDemo/Pods-SwiftLibraryDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9D8A24FB2D5456B1F09EF00 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE0FE949833FE6B742F54695 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLibraryDemo/Pods-SwiftLibraryDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94B936E81CE027B40013E424 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B937061CE05A190013E424 /* Shape.swift in Sources */,
+				94B937021CE027DB0013E424 /* MainViewController.swift in Sources */,
+				94B937081CE05ABD0013E424 /* SubShape.swift in Sources */,
 				94B936F21CE027B50013E424 /* ViewController.swift in Sources */,
 				94B936F01CE027B50013E424 /* AppDelegate.swift in Sources */,
+				94B9370A1CE06D590013E424 /* SnakesAndLadders.swift in Sources */,
+				94B937041CE03C120013E424 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +344,7 @@
 		};
 		94B936FF1CE027B50013E424 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E14E38164319FAFC9BB701A6 /* Pods-SwiftLibraryDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftLibraryDemo/Info.plist;
@@ -260,6 +356,7 @@
 		};
 		94B937001CE027B50013E424 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1BD2100B22F00FA4FE47F53 /* Pods-SwiftLibraryDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftLibraryDemo/Info.plist;
@@ -288,6 +385,7 @@
 				94B937001CE027B50013E424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
